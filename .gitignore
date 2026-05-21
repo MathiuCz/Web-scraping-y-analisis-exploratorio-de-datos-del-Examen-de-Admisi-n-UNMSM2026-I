@@ -22,16 +22,12 @@ Thumbs.db
 .uv/
 uv.lock
 
-# AI & Config files (No subir instrucciones de agentes)
+# AI & Config files 
 AGENTS.md
 opencode.json
 .claude/
 .cursor/
 .cursorrules
-
-# Power BI (Binarios pesados, mejor no versionar)
-dashboard/*.pbix
-dashboard/*.pbit
 
 # Excel outputs del scraper
 *.xlsx

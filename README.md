@@ -1,4 +1,4 @@
-ope# UNMSM Admisión 2026-I: Web Scraping & EDA
+# UNMSM Admisión 2026-I: Web Scraping & EDA
 
 Análisis exploratorio de datos (EDA) y dashboard interactivo sobre los resultados del examen de admisión de la Universidad Nacional Mayor de San Marcos (UNMSM) para el proceso 2026-I.
 
@@ -6,18 +6,18 @@ Este proyecto de portafolio de Data Science combina **web scraping** con Seleniu
 
 ---
 
-##  Negocio y Objetivos
+## 🎯 Problema y Objetivos
 
-El objetivo principal es proporcionar a futuros postulantes una herramienta basada en datos para evaluar su estrategia de admisión.
+Los postulantes carecen de información relevante para evaluar su postulación. El objetivo de este proyecto es proporcionar a los futuros postulantes una herramienta basada en datos para evaluar su estrategia de admisión a la UNMSM.
 
-**Preguntas de negocio:**
+**Preguntas del problema:**
 1. ¿Qué tan competitivo es realmente ingresar a San Marcos?
 2. ¿Qué carrera debo elegir según mi puntaje estimado?
 3. ¿Vale la pena postular a las sedes descentralizadas?
 
 ---
 
-##  Hallazgos Clave (Insights)
+## 💡 Hallazgos Clave (Insights)
 
 1. **El puntaje solo no determina el ingreso:** La admisión depende de la combinación entre puntaje y la demanda de la carrera elegida. Un puntaje alto no garantiza el ingreso si la escuela tiene alta competencia.
 2. **Relación inversa puntaje/tasa de ingreso:** Existe una correlación inversa entre el puntaje de corte y la tasa de admisión por escuela. *Medicina Humana* es un outlier estructural con un corte de ~1,469 puntos (270 pts por encima del segundo lugar).
@@ -62,7 +62,7 @@ Este proyecto utiliza `uv` para la gestión de dependencias y Python 3.14.
 
 ```bash
 # Clonar el repositorio
-git clone <repo-url>
+git clone https://github.com/MathiuCz/Web-scraping-y-analisis-exploratorio-de-datos-del-Examen-de-Admisi-n-UNMSM2026-I.git
 cd unmsm-admision-2026
 
 # Crear entorno virtual e instalar dependencias
@@ -75,7 +75,8 @@ Si deseas obtener los datos más recientes (requiere Edge instalado):
 ```bash
 python src/scraper.py
 ```
-*Nota: El scraper guarda los archivos CSV y Excel en la raíz del proyecto.*
+
+**Nota:** El scraper guarda los archivos CSV en la carpeta `data/raw/`. Está pendiente de refactorización — úsalo con precaución.
 
 ### 3. Abrir el Notebook de EDA
 ```bash
@@ -85,6 +86,16 @@ jupyter notebook notebooks/eda.ipynb
 
 ### 4. Explorar el Dashboard
 Abre el archivo `.pbix` en la carpeta `dashboard/` con **Power BI Desktop**.
+
+---
+
+## 📊 Dashboard Preview
+
+![Página 1 - Visión General](dashboard/preview_p1.png)
+![Página 2 - ¿Qué carrera elegir?](dashboard/preview_p2.png)
+![Página 3 - ¿En qué sede postular?](dashboard/preview_p3.png)
+
+*Los visuales son interactivos — al seleccionar una escuela o sede, el resto de gráficos se actualiza automáticamente.*
 
 ---
 
@@ -98,7 +109,7 @@ Abre el archivo `.pbix` en la carpeta `dashboard/` con **Power BI Desktop**.
 
 ---
 
-## ️ Limitaciones y Notas de Calidad
+## ⚠️ Limitaciones y Notas de Calidad
 
 - **Ausentes:** Se excluyeron 339 registros de postulantes ausentes del análisis de puntajes.
 - **Escuelas vs Carreras:** El dataset trata cada combinación "Carrera + Sede" como una escuela independiente (95 entradas), lo cual es correcto para el análisis de admisión ya que cada combo tiene su propio pool de vacantes.
@@ -106,6 +117,6 @@ Abre el archivo `.pbix` en la carpeta `dashboard/` con **Power BI Desktop**.
 
 ---
 
-##  Licencia
+## 📄 Licencia
 
 Este proyecto es de código abierto y fines educativos.
