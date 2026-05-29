@@ -6,7 +6,7 @@ Este proyecto de portafolio de Data Science combina **web scraping** con Seleniu
 
 ---
 
-## 🎯 Problema y Objetivos
+## Problema y Objetivos
 
 Los postulantes carecen de información relevante para evaluar su postulación. El objetivo de este proyecto es proporcionar a los futuros postulantes una herramienta basada en datos para evaluar su estrategia de admisión a la UNMSM.
 
@@ -17,7 +17,7 @@ Los postulantes carecen de información relevante para evaluar su postulación. 
 
 ---
 
-## 💡 Hallazgos Clave (Insights)
+## Hallazgos Clave (Insights)
 
 1. **El puntaje solo no determina el ingreso:** La admisión depende de la combinación entre puntaje y la demanda de la carrera elegida. Un puntaje alto no garantiza el ingreso si la escuela tiene alta competencia.
 2. **Relación inversa puntaje/tasa de ingreso:** Existe una correlación inversa entre el puntaje de corte y la tasa de admisión por escuela. *Medicina Humana* es un outlier estructural con un corte de ~1,469 puntos (270 pts por encima del segundo lugar).
@@ -25,7 +25,7 @@ Los postulantes carecen de información relevante para evaluar su postulación. 
 
 ---
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
 - **Lenguaje:** Python 3.14
 - **Gestor de paquetes:** `uv`
@@ -36,7 +36,7 @@ Los postulantes carecen de información relevante para evaluar su postulación. 
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```text
 unmsm-admision-2026/
@@ -55,7 +55,7 @@ unmsm-admision-2026/
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto
+## Cómo ejecutar el proyecto
 
 ### 1. Configuración del entorno
 Este proyecto utiliza `uv` para la gestión de dependencias y Python 3.14.
@@ -89,7 +89,7 @@ Abre el archivo `.pbix` en la carpeta `dashboard/` con **Power BI Desktop**.
 
 ---
 
-## 📊 Dashboard Preview
+## Dashboard
 
 ![Página 1 - Visión General](dashboard/preview_p1.png)
 ![Página 2 - ¿Qué carrera elegir?](dashboard/preview_p2.png)
@@ -99,7 +99,7 @@ Abre el archivo `.pbix` en la carpeta `dashboard/` con **Power BI Desktop**.
 
 ---
 
-## 📈 Métricas del Dataset
+## Métricas del Dataset
 
 - **Total Postulantes:** 26,518
 - **Ingresantes:** 2,772 (Tasa global: 10.45%)
@@ -109,7 +109,7 @@ Abre el archivo `.pbix` en la carpeta `dashboard/` con **Power BI Desktop**.
 
 ---
 
-## ⚠️ Limitaciones y Notas de Calidad
+## Limitaciones y Notas de Calidad
 
 - **Ausentes:** Se excluyeron 339 registros de postulantes ausentes del análisis de puntajes.
 - **Escuelas vs Carreras:** El dataset trata cada combinación "Carrera + Sede" como una escuela independiente (95 entradas), lo cual es correcto para el análisis de admisión ya que cada combo tiene su propio pool de vacantes.
@@ -117,6 +117,6 @@ Abre el archivo `.pbix` en la carpeta `dashboard/` con **Power BI Desktop**.
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto es de código abierto y fines educativos.
