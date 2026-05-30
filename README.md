@@ -2,6 +2,8 @@
 
 Análisis exploratorio de datos (EDA) y dashboard interactivo sobre los resultados del examen de admisión de la Universidad Nacional Mayor de San Marcos (UNMSM) para el proceso 2026-I.
 
+[![Ver Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter)](https://nbviewer.org/github/MathiuCz/UNMSM-Admision-2026-I/blob/main/notebooks/eda.ipynb)
+
 Este proyecto de portafolio de Data Science combina **web scraping** con Selenium, **análisis exploratorio** con Python/Pandas y visualización de datos con **Power BI** para responder preguntas clave sobre la competitividad y las estrategias de admisión.
 
 ---
